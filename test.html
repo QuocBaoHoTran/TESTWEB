@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST WEB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+  <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+    <!-- Slides -->
+                <div class="swiper-slide"><img src="https://bookbuy.vn/Res/Images/Album/460ee7ba-2b4e-45db-9946-6268d5948892.jpg?w=880&scale=both&h=320&mode=crop" ></div>
+                <div class="swiper-slide"><img src="https://bookbuy.vn/Res/Images/Album/fc327f22-6650-4b7e-8ede-4b6cacda9e89.jpg?w=880&scale=both&h=320&mode=crop" ></div>
+                <div class="swiper-slide"><img src="https://bookbuy.vn/Res/Images/Album/06ba7a2e-4c20-4a40-bcac-d08674a42762.jpg?w=880&scale=both&h=320&mode=crop" ></div>
+            </div>
+  <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>      
+        
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        autoplay:{
+            Delay: 1000,
+            disableOnInteration : false,
+        },
+    loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable :true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+    }); 
+</script>
+<div class="listimage">
+    <div class="image">
+        <img src="https://bookbuy.vn/Res/Images/Banner/e951a424-db31-4ac6-ae92-2c275b3de96b.jpg?width=500&format=jpg&scale=both&quality=90" alt="anh1" >
+        <div class="overlay">Bút Sơn Công Nghiệp</div>
+    </div>
+    <div class="image">
+        <img src="https://bookbuy.vn/Res/Images/Banner/02b318e9-7b8f-4fc1-bc54-549a789cd9db.jpg?width=500&format=jpg&scale=both&quality=90" alt="anh2">
+        <div class="overlay">Sổ vẽ A5</div>
+    </div>
+    <div class="image">
+        <img src="https://bookbuy.vn/Res/Images/Banner/866ec12b-6830-4f10-b2c6-0e01b8cb873c.jpg?width=500&format=jpg&scale=both&quality=90" alt="anh3">
+        <div class="overlay">Xà Bông Thiên Nhiên</div>
+    </div>
+</div>
+</body>
+</html>
